@@ -1,0 +1,23 @@
+folder Auth
+setup Typescript : $ npm install typescript@^5.5.4 ts-node-dev@^2.0.0 express@^4.19.2 @types/express@^4.17.17
+add tsconfig file : $ tsc --init
+add error async func : $ npm i express-async-errors
+add mongoose : $ npm i mongoose
+add Cookies : $ npm install cookie-session @types/cookie-session
+add JWT : $ npm install jsonwebtoken @types/jsonwebtoken
+add Test Requirements : $ npm install –save-dev @types/jest @types/supertest jest ts-jest supertest@4.0.2 mongodb-memory-server@6.5.1
+add for prevent error skaffold dev when run after implement test
+- $ npm install --omit=dev
+- $ npm install -g npm 
+- $ npm update debug supports-color
+run docker Image : $ docker build -t mhdwildan/auth .
+run auth : $ npm start
+run test : $ npm run test
+
+Folder Client
+add npm setup : $ npm init -y
+add libary basic Next : $ npm install react react-dom next
+run docker Image : $ docker build -t mhdwildan/client-ticketing.dev .
+run Client : $ npm run dev
+
+run skaffold : $ skaffold dev
