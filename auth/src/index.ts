@@ -5,7 +5,7 @@ import { app } from './app';
 
 //function untuk mengkoneksikan auth app dengan DB mongoose
 const start = async () => {
-  console.log('Service auth Starting Engine..');
+  console.log('Service auth Starting Engine!!');
   //periksa apakah Env Variable JWT_KEY ada (env di auth-depl.yaml)
   if (!process.env.JWT_KEY) {
     throw new Error ("JWT_KEY Must be defined");
